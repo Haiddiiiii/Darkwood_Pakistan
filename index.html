@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darkwood Pakistan | Premium Interior Design & Furniture | Islamabad</title>
+  <meta name="description" content="Darkwood Creations Private Limited – Working since 2010, we specialize in modern interior design and high-quality furniture manufacturing in Pakistan. Contact Sardar Saqib: 03165536627" />
+  <meta name="keywords" content="interior design Pakistan, furniture manufacturing, Darkwood Pakistan, home decor Islamabad, luxury furniture" />
+  <meta name="author" content="Darkwood Creations Private Limited" />
+  <meta property="og:title" content="Darkwood Pakistan | Premium Interior Design" />
+  <meta property="og:description" content="Modern interior design and high-quality furniture manufacturing since 2010. Based in Islamabad, Pakistan." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-dw">DARKWOOD</span>
+        <span class="loader-line"></span>
+        <span class="loader-pk">PAKISTAN</span>
+      </div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Cursor -->
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" id="nav-logo-link">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="4" fill="#8B6914"/>
+            <path d="M8 8h10c7.732 0 14 6.268 14 14s-6.268 14-14 14H8V8z" fill="#1a0e05"/>
+            <path d="M8 16h8c3.314 0 6 2.686 6 6s-2.686 6-6 6H8V16z" fill="#8B6914"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">DARKWOOD</span>
+          <span class="logo-sub">PAKISTAN</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+        <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <a href="tel:03165536627" class="nav-cta" id="nav-cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        Call Now
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <!-- Animated video background using CSS + canvas particles -->
+    <div class="hero-video-bg">
+      <video class="hero-video" autoplay muted loop playsinline poster="images/hero.jpg">
+        <!-- We use a free Pexels interior design video embed -->
+        <source src="https://www.pexels.com/download/video/3209828/" type="video/mp4" />
+      </video>
+      <div class="hero-img-fallback" style="background-image: url('images/hero.jpg')"></div>
+    </div>
+    <canvas id="particles-canvas" class="particles-canvas"></canvas>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Since 2010 — Islamabad, Pakistan
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">Crafting</span>
+        <span class="title-line title-accent">Timeless</span>
+        <span class="title-line">Interiors</span>
+      </h1>
+      <p class="hero-subtitle">Blending tradition with modern design excellence — furniture manufacturing & interior solutions that transform spaces across Pakistan.</p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary" id="hero-explore-btn">
+          <span>Explore Work</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost" id="hero-contact-btn">Get Consultation</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num" data-target="15">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num" data-target="500">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num" data-target="100">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+
+    <!-- Floating social links -->
+    <div class="hero-socials">
+      <a href="https://www.facebook.com/darkwoodpakistan/" target="_blank" rel="noopener" class="social-link" id="social-facebook" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/darkwood_pakistan/" target="_blank" rel="noopener" class="social-link" id="social-instagram" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- MARQUEE BANNER -->
+  <div class="marquee-wrapper" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Interior Design</span><span class="marquee-dot">✦</span>
+      <span>Furniture Manufacturing</span><span class="marquee-dot">✦</span>
+      <span>Residential Projects</span><span class="marquee-dot">✦</span>
+      <span>Commercial Spaces</span><span class="marquee-dot">✦</span>
+      <span>Custom Interiors</span><span class="marquee-dot">✦</span>
+      <span>Islamabad</span><span class="marquee-dot">✦</span>
+      <span>Pakistan</span><span class="marquee-dot">✦</span>
+      <span>Interior Design</span><span class="marquee-dot">✦</span>
+      <span>Furniture Manufacturing</span><span class="marquee-dot">✦</span>
+      <span>Residential Projects</span><span class="marquee-dot">✦</span>
+      <span>Commercial Spaces</span><span class="marquee-dot">✦</span>
+      <span>Custom Interiors</span><span class="marquee-dot">✦</span>
+      <span>Islamabad</span><span class="marquee-dot">✦</span>
+      <span>Pakistan</span><span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img-main reveal">
+            <img src="images/hero.jpg" alt="Darkwood Pakistan - Luxury Interior Design" loading="lazy" />
+            <div class="about-img-badge">
+              <span class="badge-year">Est.</span>
+              <span class="badge-num">2010</span>
+            </div>
+          </div>
+          <div class="about-img-secondary reveal reveal-delay-1">
+            <img src="images/bedroom.jpg" alt="Premium Bedroom Design" loading="lazy" />
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-tag reveal">Who We Are</div>
+          <h2 class="section-title reveal">
+            Darkwood Creations<br />
+            <em>Private Limited</em>
+          </h2>
+          <p class="about-lead reveal">Working since 2010, we specialize in modern interior design and high-quality furniture manufacturing, blending tradition with contemporary elegance.</p>
+          <p class="about-body reveal">Based in Islamabad, Darkwood Pakistan has been transforming residential and commercial spaces for over 15 years. Our team of expert designers and craftsmen deliver bespoke solutions tailored to each client's vision, combining the finest materials with meticulous craftsmanship.</p>
+          <div class="about-owner reveal">
+            <div class="owner-avatar">
+              <div class="owner-initials">SS</div>
+            </div>
+            <div class="owner-info">
+              <div class="owner-name">Sardar Saqib</div>
+              <div class="owner-title">Founder & Owner</div>
+            </div>
+            <a href="tel:03165536627" class="owner-contact">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+              03165536627
+            </a>
+          </div>
+          <div class="about-features reveal">
+            <div class="feature-item">
+              <div class="feature-icon">🏆</div>
+              <div>
+                <div class="feature-title">Award-Winning Designs</div>
+                <div class="feature-desc">Recognized for excellence in interior craftsmanship</div>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🪵</div>
+              <div>
+                <div class="feature-title">Premium Materials</div>
+                <div class="feature-desc">Finest wood and materials sourced carefully</div>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🎨</div>
+              <div>
+                <div class="feature-title">Custom Solutions</div>
+                <div class="feature-desc">Every design uniquely tailored to your vision</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services section">
+    <div class="services-bg-pattern"></div>
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal">What We Do</div>
+        <h2 class="section-title reveal">Our <em>Services</em></h2>
+        <p class="section-desc reveal">From concept to completion — comprehensive interior and furniture solutions for homes and businesses across Pakistan.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal" id="service-interior">
+          <div class="service-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="service-title">Residential Interior Design</h3>
+          <p class="service-desc">Transform your home into a masterpiece. We design living rooms, bedrooms, kitchens, and bathrooms with elegance and functionality.</p>
+          <div class="service-tags">
+            <span>Living Room</span><span>Bedroom</span><span>Kitchen</span><span>Bathroom</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-1" id="service-commercial">
+          <div class="service-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="service-title">Commercial Projects</h3>
+          <p class="service-desc">Offices, restaurants, retail spaces and corporate environments designed to inspire productivity and leave a lasting impression.</p>
+          <div class="service-tags">
+            <span>Offices</span><span>Restaurants</span><span>Retail</span><span>Corporate</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-2" id="service-furniture">
+          <div class="service-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 9V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v2"/><path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1z"/><path d="M4 18v2"/><path d="M20 18v2"/><path d="M12 4v5"/></svg>
+          </div>
+          <h3 class="service-title">Custom Furniture Manufacturing</h3>
+          <p class="service-desc">Handcrafted bespoke furniture built from premium materials — sofas, wardrobes, dining sets, beds and more, all made to your exact specifications.</p>
+          <div class="service-tags">
+            <span>Sofas</span><span>Wardrobes</span><span>Dining</span><span>Beds</span>
+          </div>
+        </div>
+        <div class="service-card reveal" id="service-custom">
+          <div class="service-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3 class="service-title">Customized Interior Planning</h3>
+          <p class="service-desc">Full space planning, 3D visualization and material selection — from concept sketches to photorealistic renders before a single nail is hammered.</p>
+          <div class="service-tags">
+            <span>Space Planning</span><span>3D Design</span><span>Consultation</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-1" id="service-renovation">
+          <div class="service-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          </div>
+          <h3 class="service-title">Renovation & Refurbishment</h3>
+          <p class="service-desc">Breathe new life into existing spaces with our complete renovation services — structural changes, finishes, lighting and full interior makeovers.</p>
+          <div class="service-tags">
+            <span>Renovation</span><span>Refurbishment</span><span>Makeover</span>
+          </div>
+        </div>
+        <div class="service-card reveal reveal-delay-2" id="service-consultation">
+          <div class="service-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="service-title">Free Design Consultation</h3>
+          <p class="service-desc">Not sure where to start? Get a free consultation with our expert designers. DM us or call directly to discuss your project requirements.</p>
+          <div class="service-tags">
+            <span>Free Consult</span><span>Expert Advice</span><span>DM Us</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal">Our Work</div>
+        <h2 class="section-title reveal">Featured <em>Portfolio</em></h2>
+        <p class="section-desc reveal">A selection of our finest residential and commercial projects across Pakistan.</p>
+      </div>
+
+      <div class="portfolio-filter reveal">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All Projects</button>
+        <button class="filter-btn" data-filter="residential" id="filter-residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial" id="filter-commercial">Commercial</button>
+        <button class="filter-btn" data-filter="furniture" id="filter-furniture">Furniture</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item large reveal" data-cat="residential" id="portfolio-living">
+          <div class="portfolio-img">
+            <img src="images/hero.jpg" alt="Modern Living Room Design" loading="lazy" />
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <span class="portfolio-cat">Residential</span>
+              <h3>Modern Living Room</h3>
+              <p>Islamabad, 2024</p>
+            </div>
+            <div class="portfolio-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal reveal-delay-1" data-cat="residential" id="portfolio-bedroom">
+          <div class="portfolio-img">
+            <img src="images/bedroom.jpg" alt="Luxury Bedroom Design" loading="lazy" />
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <span class="portfolio-cat">Residential</span>
+              <h3>Master Bedroom Suite</h3>
+              <p>Rawalpindi, 2024</p>
+            </div>
+            <div class="portfolio-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal reveal-delay-2" data-cat="commercial" id="portfolio-office">
+          <div class="portfolio-img">
+            <img src="images/office.jpg" alt="Executive Office Design" loading="lazy" />
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <span class="portfolio-cat">Commercial</span>
+              <h3>Executive Office</h3>
+              <p>Islamabad, 2023</p>
+            </div>
+            <div class="portfolio-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item reveal" data-cat="furniture" id="portfolio-kitchen">
+          <div class="portfolio-img">
+            <img src="images/kitchen.jpg" alt="Modern Kitchen Design" loading="lazy" />
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <span class="portfolio-cat">Furniture</span>
+              <h3>Luxury Kitchen</h3>
+              <p>Lahore, 2023</p>
+            </div>
+            <div class="portfolio-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-cta reveal">
+        <p>Want to see more of our work?</p>
+        <a href="https://www.instagram.com/darkwood_pakistan/" target="_blank" rel="noopener" class="btn btn-outline" id="portfolio-instagram-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          View on Instagram
+        </a>
+        <a href="https://www.facebook.com/darkwoodpakistan/" target="_blank" rel="noopener" class="btn btn-outline" id="portfolio-facebook-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          View on Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us section">
+    <div class="why-bg">
+      <div class="why-bg-img" style="background-image: url('images/office.jpg')"></div>
+      <div class="why-bg-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="why-content">
+        <div class="why-text">
+          <div class="section-tag reveal" style="color: #f0c070;">Why Choose Us</div>
+          <h2 class="section-title reveal" style="color: white;">The Darkwood<br /><em>Difference</em></h2>
+          <p class="section-desc reveal" style="color: rgba(255,255,255,0.8);">We don't just design spaces — we craft lifestyles. Every project tells a unique story of craftsmanship, attention to detail and client satisfaction.</p>
+        </div>
+        <div class="why-features">
+          <div class="why-card reveal" id="why-experience">
+            <div class="why-num">01</div>
+            <div class="why-info">
+              <h3>15+ Years Experience</h3>
+              <p>Over a decade and a half of expertise in transforming spaces across Pakistan.</p>
+            </div>
+          </div>
+          <div class="why-card reveal reveal-delay-1" id="why-quality">
+            <div class="why-num">02</div>
+            <div class="why-info">
+              <h3>Premium Quality Materials</h3>
+              <p>We source only the finest materials — solid wood, premium fabrics, and durable finishes.</p>
+            </div>
+          </div>
+          <div class="why-card reveal reveal-delay-2" id="why-custom">
+            <div class="why-num">03</div>
+            <div class="why-info">
+              <h3>100% Customization</h3>
+              <p>Every project is unique. We tailor every element to your personal style and needs.</p>
+            </div>
+          </div>
+          <div class="why-card reveal" id="why-timely">
+            <div class="why-num">04</div>
+            <div class="why-info">
+              <h3>On-Time Delivery</h3>
+              <p>We respect your time. Projects are completed on schedule without compromising quality.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal">Client Love</div>
+        <h2 class="section-title reveal">What Our <em>Clients Say</em></h2>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonial-track" id="testimonial-track">
+          <div class="testimonial-card active" id="test-1">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-text">"Darkwood completely transformed our home. The attention to detail and quality of work exceeded our expectations. Sardar Saqib and his team are true professionals."</p>
+            <div class="test-author">
+              <div class="test-avatar">AK</div>
+              <div>
+                <div class="test-name">Ahmed Khan</div>
+                <div class="test-loc">Islamabad</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" id="test-2">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-text">"The custom furniture they built for our office is absolutely stunning. High quality, delivered on time, and the design is exactly what we envisioned. Highly recommended!"</p>
+            <div class="test-author">
+              <div class="test-avatar">SR</div>
+              <div>
+                <div class="test-name">Sana Raza</div>
+                <div class="test-loc">Rawalpindi</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" id="test-3">
+            <div class="test-stars">★★★★★</div>
+            <p class="test-text">"We had our entire restaurant designed by Darkwood Pakistan. The result was breathtaking — customers constantly compliment the ambiance. Best interior designers in Pakistan!"</p>
+            <div class="test-author">
+              <div class="test-avatar">MF</div>
+              <div>
+                <div class="test-name">Muhammad Farhan</div>
+                <div class="test-loc">Lahore</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="test-controls">
+          <button class="test-btn" id="test-prev" aria-label="Previous">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="test-dots">
+            <button class="test-dot active" data-idx="0" id="dot-0"></button>
+            <button class="test-dot" data-idx="1" id="dot-1"></button>
+            <button class="test-dot" data-idx="2" id="dot-2"></button>
+          </div>
+          <button class="test-btn" id="test-next" aria-label="Next">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-tag reveal">Get In Touch</div>
+          <h2 class="section-title reveal">Let's Create Your<br /><em>Dream Space</em></h2>
+          <p class="section-desc reveal">Ready to transform your space? Contact us today for a free consultation. Our expert team is here to bring your vision to life.</p>
+
+          <div class="contact-items">
+            <div class="contact-item reveal" id="contact-phone">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+              </div>
+              <div class="contact-text">
+                <div class="contact-label">Phone / WhatsApp</div>
+                <a href="tel:03165536627" class="contact-value">0316-5536627</a>
+              </div>
+            </div>
+            <div class="contact-item reveal reveal-delay-1" id="contact-owner">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div class="contact-text">
+                <div class="contact-label">Owner</div>
+                <div class="contact-value">Sardar Saqib</div>
+              </div>
+            </div>
+            <div class="contact-item reveal reveal-delay-2" id="contact-location">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-text">
+                <div class="contact-label">Location</div>
+                <div class="contact-value">Islamabad, Pakistan</div>
+              </div>
+            </div>
+            <div class="contact-item reveal" id="contact-company">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <div class="contact-text">
+                <div class="contact-label">Company</div>
+                <div class="contact-value">Darkwood Creations Private Limited</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials reveal">
+            <a href="https://www.facebook.com/darkwoodpakistan/" target="_blank" rel="noopener" class="c-social-btn" id="contact-fb">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              Facebook
+            </a>
+            <a href="https://www.instagram.com/darkwood_pakistan/" target="_blank" rel="noopener" class="c-social-btn" id="contact-ig">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram
+            </a>
+            <a href="https://wa.me/923165536627" target="_blank" rel="noopener" class="c-social-btn" id="contact-wa">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal reveal-delay-1">
+          <form class="contact-form" id="contact-form" novalidate>
+            <h3 class="form-title">Send Us a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" name="name" placeholder="e.g. Ahmad Ali" required />
+              </div>
+              <div class="form-group">
+                <label for="fphone">Phone Number</label>
+                <input type="tel" id="fphone" name="phone" placeholder="03XX-XXXXXXX" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="email" placeholder="your@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="fservice">Service Required</label>
+              <select id="fservice" name="service">
+                <option value="">Select a service...</option>
+                <option value="residential">Residential Interior Design</option>
+                <option value="commercial">Commercial Projects</option>
+                <option value="furniture">Custom Furniture</option>
+                <option value="renovation">Renovation</option>
+                <option value="consultation">Free Consultation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Your Message</label>
+              <textarea id="fmessage" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <div class="form-success" id="form-success">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Message received! We'll contact you shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="logo-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="40" height="40" rx="4" fill="#8B6914"/>
+                  <path d="M8 8h10c7.732 0 14 6.268 14 14s-6.268 14-14 14H8V8z" fill="#1a0e05"/>
+                  <path d="M8 16h8c3.314 0 6 2.686 6 6s-2.686 6-6 6H8V16z" fill="#8B6914"/>
+                </svg>
+              </div>
+              <div class="logo-text">
+                <span class="logo-main">DARKWOOD</span>
+                <span class="logo-sub">PAKISTAN</span>
+              </div>
+            </div>
+            <p class="footer-tagline">Transforming spaces across Pakistan since 2010. Modern interior design and high-quality furniture manufacturing — blending tradition with elegance.</p>
+            <div class="footer-socials">
+              <a href="https://www.facebook.com/darkwoodpakistan/" target="_blank" rel="noopener" aria-label="Facebook" id="footer-fb">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/darkwood_pakistan/" target="_blank" rel="noopener" aria-label="Instagram" id="footer-ig">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="https://wa.me/923165536627" target="_blank" rel="noopener" aria-label="WhatsApp" id="footer-wa">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Residential Design</a></li>
+              <li><a href="#services">Commercial Projects</a></li>
+              <li><a href="#services">Custom Furniture</a></li>
+              <li><a href="#services">Renovation</a></li>
+              <li><a href="#contact">Free Consultation</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact-col">
+            <h4>Contact Us</h4>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+              <a href="tel:03165536627">0316-5536627</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Islamabad, Pakistan</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span>Owner: Sardar Saqib</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2024 Darkwood Creations Private Limited. All rights reserved.</p>
+        <p>Designed with ♥ for Darkwood Pakistan</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/923165536627" target="_blank" rel="noopener" class="whatsapp-float" id="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    <span class="whatsapp-tooltip">Chat with us!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
